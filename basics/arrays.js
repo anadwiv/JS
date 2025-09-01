@@ -16,3 +16,40 @@ myArray.push(7)
 console.log(myArray);
 myArray.pop()
 console.log(myArray)
+
+// unshift se front main add ho jata hai
+myArray.unshift(0)
+console.log(myArray);
+myArray.unshift(9)
+console.log(myArray);
+
+// shift aage se number ko remove karta hau 
+myArray.shift()
+console.log(myArray);
+
+// true/false ofc
+console.log(myArray.includes(1));
+// -1 if not present in case of index
+console.log(myArray.indexOf(9))
+
+// join -> array ke elements ko string main add kar deta hai
+const newArr = myArray.join()
+console.log(myArray);
+console.log(newArr); // agar typeof karke dekhoge toh string aega
+
+// slice , splice 
+console.log("A",myArr);
+const mynew = myArr.slice(1,3)
+console.log(mynew);
+console.log("B", myArr);
+
+//splice operation
+const mynew2 = myArr.splice(1,3)
+console.log("C",myArr);
+console.log(mynew2);
+
+// slice original array ko change nahi karta
+//splice changes the original array
+
+const m_heroes = ["Thor","Ironman","spiderman"]
+const dc_heroes = ["batman","flash","superman"]
